@@ -3,20 +3,20 @@ import React, { Component } from 'react';
 import { StyleSheet, View, Text, Platform , TouchableOpacity} from 'react-native';
 
 import AppIntroSlider from 'react-native-app-intro-slider';
-import Home from  './app/screens/Home'
+import ExampleList from "./app/screens/ExampleList";
+import Plan from "./app/screens/Plan";
+import Home from "./app/screens/Home";
+import HotelDetails from "./app/screens/HotelDetails";
+import Login from "./app/screens/Login";
+import Register from "./app/screens/Register";
 import PrimaryNav from "./app/screens/PrimaryNav";
-import HotelList from "./app/screens/HotelList";
-import { Provider as PaperProvider } from 'react-native-paper';
 
 export default class App extends Component {
 
     constructor(props) {
         super(props);
         this.state = {
-
-            show_Main_App: false
-
-
+            show_Main_App: true
         };
     }
 
@@ -30,9 +30,7 @@ export default class App extends Component {
     render() {
         if (this.state.show_Main_App) {
             return (
-                <PaperProvider>
-                    <Home/>
-                </PaperProvider>
+                <PrimaryNav/>
             );
         } else {
             return (
@@ -88,7 +86,7 @@ const slides = [
         titleStyle: styles.title,
         textStyle: styles.text,
         imageStyle: styles.image,
-        backgroundColor: '#3497ff',
+        backgroundColor: '#4A637D',
 
     },
     {
@@ -102,7 +100,7 @@ const slides = [
         titleStyle: styles.title,
         textStyle: styles.text,
         imageStyle: styles.image,
-        backgroundColor: '#3497ff',
+        backgroundColor: '#4A637D',
     },
     {
         key: 'k3',
@@ -114,7 +112,7 @@ const slides = [
         titleStyle: styles.title,
         textStyle: styles.text,
         imageStyle: styles.image,
-        backgroundColor: '#3497ff',
+        backgroundColor: '#4A637D',
     },
     {
         key: 'k4',
@@ -126,6 +124,6 @@ const slides = [
         titleStyle: styles.title,
         textStyle: styles.text,
         imageStyle: styles.image,
-        backgroundColor: '#3497ff',
+        backgroundColor: '#4A637D',
     },
 ];

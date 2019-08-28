@@ -8,16 +8,16 @@ export default class Home extends React.Component{
         return (
             <View style={styles.container}>
                 <View style={styles.item}>
-                    <HomeCard description ='Reservation Hotel' />
+                    <HomeCard description ='Reservation Hotel'  image={require('../assets/hotel.png')} />
                 </View>
                 <View style={styles.item}>
-                    <HomeCard description ='Location Voiture'/>
+                    <HomeCard description ='Plans suggeré' image={require('../assets/plan.png')}/>
                 </View>
                 <View style={styles.item}>
-                    <HomeCard description ='Plans suggeré'/>
+                    <HomeCard description ='Location Voiture' image={require('../assets/car_renting.jpeg')}/>
                 </View>
                 <View style={styles.item}>
-                    <HomeCard description='Settings'/>
+                    <HomeCard description='Settings' image={require('../assets/setting.jpeg')}/>
                 </View>
             </View>
 
@@ -29,17 +29,16 @@ export default class Home extends React.Component{
 const styles = StyleSheet.create({
 
     container: {
-        flex: 1,
-        paddingTop: 100,
-        //justifyContent: 'center',
+        flex: 2,
+        paddingTop: Platform.OS === 'ios' ? 200 : 100,
+        alignContent : 'center',
         //padding: 5
-        // flexDirection : 'space-between'
-        flexDirection: 'row',
+        backgroundColor: '#f8f8f8',
         flexWrap: 'wrap',
         alignItems: 'flex-start'
 
     },
     item : {
-      width : '50%', height: '45%'
+      width : 180, height: 250
     }
 });

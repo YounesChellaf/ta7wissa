@@ -13,17 +13,17 @@ export default class HomeCard extends React.Component{
                         color={'#ffffff'}
                         margin={10}
                         padding={10}
-                        radius={4}
-                        shadowColor={'#fbf7fc'} // IOS only
-                        shadowOpacity={0.1}  // IOS only
+                        radius={10}
+                        shadowColor={'#d0ccd1'} // IOS only
+                        shadowOpacity={0.9}  // IOS only
                         shadowRadius={4}  // IOS only
-                        shadowHeight={0}  // IOS only
+                        shadowHeight={5}  // IOS only
                         shadowWidth={1}  // IOS only
                         androidElevation={3}  // Android only
                     >
                         <Image
-                            style={{margin:30, padding:60, width: 50, height: 50}}
-                            source={require('../../assets/hotel.png')}
+                            style={{margin:20, padding:55, width: 90, height: 50}}
+                            source={this.props.image}
                         />
                         <View>
                             <Text style={styles.title}>{this.props.description}</Text>
@@ -38,10 +38,10 @@ export default class HomeCard extends React.Component{
 
 const styles = StyleSheet.create({
     title: {
-        fontSize: 20,
-        color: '#000000',
         fontWeight: 'bold',
         textAlign: 'center',
-        marginTop: 20,
+        marginTop: 10,
+        fontSize: 20,
+        color: '#11417d'
     },
 });
