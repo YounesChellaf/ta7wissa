@@ -11,6 +11,9 @@ import Login from "./app/screens/Login";
 import Register from "./app/screens/Register";
 import PrimaryNav from "./app/screens/PrimaryNav";
 
+import Navigation from './app/navigation';
+import  Block  from './app/components/Block';
+
 export default class App extends Component {
 
     constructor(props) {
@@ -30,7 +33,9 @@ export default class App extends Component {
     render() {
         if (this.state.show_Main_App) {
             return (
-                <PrimaryNav/>
+                <Block white>
+                    <Navigation />
+                </Block>
             );
         } else {
             return (

@@ -1,24 +1,21 @@
-import React, { Component } from 'react'
-import { ActivityIndicator, Keyboard, KeyboardAvoidingView, StyleSheet,Image } from 'react-native'
+import React, { Component } from 'react';
+import { Alert, ActivityIndicator, Keyboard, KeyboardAvoidingView, StyleSheet,Image } from 'react-native';
 
 import { Button, Block, Input, Text } from '../components';
 import { theme } from '../constants';
 
+const VALID_EMAIL = "";
 
-const VALID_EMAIL = "ta7wissa@azimut.com";
-const VALID_PASSWORD = "azimut";
-
-export default class Login extends Component {
+export default class Forgot extends Component {
   state = {
     email: VALID_EMAIL,
-    password: VALID_PASSWORD,
     errors: [],
     loading: false,
   }
 
-  handleLogin() {
+  handleForgot() {
     const { navigation } = this.props;
-    const { email, password } = this.state;
+    const { email } = this.state;
     const errors = [];
 
     Keyboard.dismiss();
@@ -28,14 +25,31 @@ export default class Login extends Component {
     if (email !== VALID_EMAIL) {
       errors.push('email');
     }
-    if (password !== VALID_PASSWORD) {
-      errors.push('password');
-    }
 
     this.setState({ errors, loading: false });
 
     if (!errors.length) {
-      navigation.navigate("Browse");
+      Alert.alert(
+        'Password sent!',
+        'Please check you email.',
+        [
+          {
+            text: 'OK', onPress: () => {
+              navigation.navigate('Login')
+            }
+          }
+        ],
+        { cancelable: false }
+      )
+    } else {
+      Alert.alert(
+        'Error',
+        'Please check you Email address.',
+        [
+          { text: 'Try again', }
+        ],
+        { cancelable: false }
+      )
     }
   }
 
@@ -45,10 +59,10 @@ export default class Login extends Component {
     const hasErrors = key => errors.includes(key) ? styles.hasErrors : null;
 
     return (
-      <KeyboardAvoidingView style={styles.login} behavior="padding">
+      <KeyboardAvoidingView style={styles.forgot} behavior="padding">
         <Block padding={[0, theme.sizes.base * 2]}>
-          <Text h1 bold>Login</Text>
-          <Image source={require('../assets/t7wissa.png')} style={styles.logo}/>
+          <Text h1 bold>Forgot</Text>
+            <Image source={require('../assets/t7wissa.png')} style={styles.logo}/>
           <Block middle>
             <Input
               label="Email"
@@ -57,24 +71,16 @@ export default class Login extends Component {
               defaultValue={this.state.email}
               onChangeText={text => this.setState({ email: text })}
             />
-            <Input
-              secure
-              label="Password"
-              error={hasErrors('password')}
-              style={[styles.input, hasErrors('password')]}
-              defaultValue={this.state.password}
-              onChangeText={text => this.setState({ password: text })}
-            />
-            <Button gradient onPress={() => this.handleLogin()}>
+            <Button gradient onPress={() => this.handleForgot()}>
               {loading ?
-                <ActivityIndicator size="small" color="white" /> : 
-                <Text bold white center>Login</Text>
+                <ActivityIndicator size="small" color="white" /> :
+                <Text bold white center>Forgot</Text>
               }
             </Button>
 
-            <Button onPress={() => navigation.navigate('Forgot')}>
+            <Button onPress={() => navigation.navigate('Login')}>
               <Text gray caption center style={{ textDecorationLine: 'underline' }}>
-                Forgot your password?
+                Back to Login
               </Text>
             </Button>
           </Block>
@@ -85,7 +91,7 @@ export default class Login extends Component {
 }
 
 const styles = StyleSheet.create({
-  login: {
+  forgot: {
     flex: 1,
     justifyContent: 'center',
   },

@@ -1,41 +1,46 @@
-import React, { Component } from 'react'
-import { ActivityIndicator, Keyboard, KeyboardAvoidingView, StyleSheet,Image } from 'react-native'
+import React, { Component } from 'react';
+import { Alert, ActivityIndicator, Keyboard, KeyboardAvoidingView, StyleSheet,Image } from 'react-native';
 
 import { Button, Block, Input, Text } from '../components';
 import { theme } from '../constants';
 
-
-const VALID_EMAIL = "ta7wissa@azimut.com";
-const VALID_PASSWORD = "azimut";
-
-export default class Login extends Component {
+export default class SignUp extends Component {
   state = {
-    email: VALID_EMAIL,
-    password: VALID_PASSWORD,
+    email: null,
+    username: null,
+    password: null,
     errors: [],
     loading: false,
   }
 
-  handleLogin() {
+  handleSignUp() {
     const { navigation } = this.props;
-    const { email, password } = this.state;
+    const { email, username, password } = this.state;
     const errors = [];
 
     Keyboard.dismiss();
     this.setState({ loading: true });
 
     // check with backend API or with some static data
-    if (email !== VALID_EMAIL) {
-      errors.push('email');
-    }
-    if (password !== VALID_PASSWORD) {
-      errors.push('password');
-    }
+    if (!email) errors.push('email');
+    if (!username) errors.push('username');
+    if (!password) errors.push('password');
 
     this.setState({ errors, loading: false });
 
     if (!errors.length) {
-      navigation.navigate("Browse");
+      Alert.alert(
+        'Success!',
+        'Your account has been created',
+        [
+          {
+            text: 'Continue', onPress: () => {
+              navigation.navigate('Browse')
+            }
+          }
+        ],
+        { cancelable: false }
+      )
     }
   }
 
@@ -45,17 +50,25 @@ export default class Login extends Component {
     const hasErrors = key => errors.includes(key) ? styles.hasErrors : null;
 
     return (
-      <KeyboardAvoidingView style={styles.login} behavior="padding">
+      <KeyboardAvoidingView style={styles.signup} behavior="padding">
         <Block padding={[0, theme.sizes.base * 2]}>
-          <Text h1 bold>Login</Text>
-          <Image source={require('../assets/t7wissa.png')} style={styles.logo}/>
+          <Text h1 bold>Sign Up</Text>
+            <Image source={require('../assets/t7wissa.png')} style={styles.logo}/>
           <Block middle>
             <Input
+              email
               label="Email"
               error={hasErrors('email')}
               style={[styles.input, hasErrors('email')]}
               defaultValue={this.state.email}
               onChangeText={text => this.setState({ email: text })}
+            />
+            <Input
+              label="Username"
+              error={hasErrors('username')}
+              style={[styles.input, hasErrors('username')]}
+              defaultValue={this.state.username}
+              onChangeText={text => this.setState({ username: text })}
             />
             <Input
               secure
@@ -65,16 +78,16 @@ export default class Login extends Component {
               defaultValue={this.state.password}
               onChangeText={text => this.setState({ password: text })}
             />
-            <Button gradient onPress={() => this.handleLogin()}>
+            <Button gradient onPress={() => this.handleSignUp()}>
               {loading ?
-                <ActivityIndicator size="small" color="white" /> : 
-                <Text bold white center>Login</Text>
+                <ActivityIndicator size="small" color="white" /> :
+                <Text bold white center>Sign Up</Text>
               }
             </Button>
 
-            <Button onPress={() => navigation.navigate('Forgot')}>
+            <Button onPress={() => navigation.navigate('Login')}>
               <Text gray caption center style={{ textDecorationLine: 'underline' }}>
-                Forgot your password?
+                Back to Login
               </Text>
             </Button>
           </Block>
@@ -85,7 +98,7 @@ export default class Login extends Component {
 }
 
 const styles = StyleSheet.create({
-  login: {
+  signup: {
     flex: 1,
     justifyContent: 'center',
   },

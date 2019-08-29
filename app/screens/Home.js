@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
 
     container: {
         flex: 2,
-        paddingTop: Platform.OS === 'ios' ? 200 : 100,
+        paddingTop: Platform.OS === 'ios' ? 100 : 50,
         alignContent : 'center',
         //padding: 5
         backgroundColor: '#f8f8f8',
@@ -39,6 +39,6 @@ const styles = StyleSheet.create({
 
     },
     item : {
-      width : 180, height: 250
+      width : 180, height: 200
     }
 });

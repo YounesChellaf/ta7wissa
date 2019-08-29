@@ -119,7 +119,7 @@ export default class Plan extends React.Component{
             <View style={{flex: 1,
                 backgroundColor: '#fff',
                 flexDirection: 'row',
-                paddingTop: 40,
+                paddingTop: 5,
                 paddingLeft: 40,
                 paddingRight: 20,
             }}>
