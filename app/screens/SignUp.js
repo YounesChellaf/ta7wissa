@@ -52,7 +52,7 @@ export default class SignUp extends Component {
     return (
       <KeyboardAvoidingView style={styles.signup} behavior="padding">
         <Block padding={[0, theme.sizes.base * 2]}>
-          <Text h1 bold>Sign Up</Text>
+          <Text h1 bold>S'inscrire</Text>
             <Image source={require('../assets/t7wissa.png')} style={styles.logo}/>
           <Block middle>
             <Input
@@ -64,7 +64,7 @@ export default class SignUp extends Component {
               onChangeText={text => this.setState({ email: text })}
             />
             <Input
-              label="Username"
+              label="Nom d'utilisateur"
               error={hasErrors('username')}
               style={[styles.input, hasErrors('username')]}
               defaultValue={this.state.username}
@@ -72,7 +72,7 @@ export default class SignUp extends Component {
             />
             <Input
               secure
-              label="Password"
+              label="Mot de passe"
               error={hasErrors('password')}
               style={[styles.input, hasErrors('password')]}
               defaultValue={this.state.password}
@@ -81,13 +81,13 @@ export default class SignUp extends Component {
             <Button gradient onPress={() => this.handleSignUp()}>
               {loading ?
                 <ActivityIndicator size="small" color="white" /> :
-                <Text bold white center>Sign Up</Text>
+                <Text bold white center>S'inscrire</Text>
               }
             </Button>
 
             <Button onPress={() => navigation.navigate('Login')}>
               <Text gray caption center style={{ textDecorationLine: 'underline' }}>
-                Back to Login
+                Retourner vers connecter
               </Text>
             </Button>
           </Block>

@@ -47,7 +47,7 @@ export default class Login extends Component {
     return (
       <KeyboardAvoidingView style={styles.login} behavior="padding">
         <Block padding={[0, theme.sizes.base * 2]}>
-          <Text h1 bold>Login</Text>
+          <Text h1 bold>Se connecter</Text>
           <Image source={require('../assets/t7wissa.png')} style={styles.logo}/>
           <Block middle>
             <Input
@@ -59,7 +59,7 @@ export default class Login extends Component {
             />
             <Input
               secure
-              label="Password"
+              label="Mot de passe"
               error={hasErrors('password')}
               style={[styles.input, hasErrors('password')]}
               defaultValue={this.state.password}
@@ -68,13 +68,13 @@ export default class Login extends Component {
             <Button gradient onPress={() => this.handleLogin()}>
               {loading ?
                 <ActivityIndicator size="small" color="white" /> : 
-                <Text bold white center>Login</Text>
+                <Text bold white center>Connecter</Text>
               }
             </Button>
 
             <Button onPress={() => navigation.navigate('Forgot')}>
               <Text gray caption center style={{ textDecorationLine: 'underline' }}>
-                Forgot your password?
+                mot de passe oublié ?
               </Text>
             </Button>
           </Block>
