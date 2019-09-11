@@ -64,7 +64,11 @@ class Explore extends Component {
             { minWidth: imgWidth, maxWidth: imgWidth }
           ]}
         >
-          <Text>PLAN Q</Text>
+            <Block>
+                <Block flex={false} row center space="between" style={styles.header}>
+                    <Text h1 bold>Explore</Text>
+                </Block>
+            </Block>
         </ImageBackground>
       </TouchableOpacity>
     )

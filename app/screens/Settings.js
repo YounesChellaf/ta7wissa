@@ -52,7 +52,7 @@ class Settings extends Component {
     return (
       <Block>
         <Block flex={false} row center space="between" style={styles.header}>
-          <Text h1 bold>Settings</Text>
+          <Text h1 bold>Parametres</Text>
           <Button>
             <Image
               source={profile.avatar}
@@ -65,7 +65,7 @@ class Settings extends Component {
           <Block style={styles.inputs}>
             <Block row space="between" margin={[10, 0]} style={styles.inputRow}>
               <Block>
-                <Text gray2 style={{ marginBottom: 10 }}>Username</Text>
+                <Text gray2 style={{ marginBottom: 10 }}>Nom d'utilisateur</Text>
                 {this.renderEdit('username')}
               </Block>
               <Text medium secondary onPress={() => this.toggleEdit('username')}>
@@ -136,7 +136,7 @@ class Settings extends Component {
             </Block>
             
             <Block row center space="between" style={{ marginBottom: theme.sizes.base * 2 }}>
-              <Text gray2>Newsletter</Text>
+              <Text gray2>Mise á jour</Text>
               <Switch
                 value={this.state.newsletter}
                 onValueChange={value => this.setState({ newsletter: value })}

@@ -80,7 +80,7 @@ class Browse extends Component {
                 </Card>
               </TouchableOpacity>
               <TouchableOpacity
-                  onPress={() => navigation.navigate('Explore')}
+                  onPress={() => navigation.navigate('CarRenting')}
               >
                   <Card center middle shadow style={styles.category}>
                       <Image source={require('../assets/car_renting.jpeg')} style={{width:100,height:100}}/>

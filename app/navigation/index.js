@@ -14,6 +14,7 @@ import Explore from '../screens/Explore';
 import ExampleList from '../screens/ExampleList';
 import Product from '../screens/Product';
 import Plan from '../screens/Plan';
+import CarRenting from '../screens/CarRenting';
 
 import { theme } from '../constants';
 
@@ -28,7 +29,8 @@ const screens = createStackNavigator({
     Explore,
     ExampleList,
     Product,
-    Plan
+    Plan,
+    CarRenting
 }, {
     defaultNavigationOptions: {
         headerStyle: {
