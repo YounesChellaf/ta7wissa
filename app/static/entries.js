@@ -2,7 +2,7 @@ export const ENTRIES1 = [
     {
         title: 'Beautiful and dramatic Antelope Canyon',
         subtitle: 'Lorem ipsum dolor sit amet et nuncat mergitur',
-        illustration: '../assets/cars/symbole.jpeg'
+        illustration: 'cars/symbole.jpeg'
     },
     {
         title: 'Earlier this morning, NYC',

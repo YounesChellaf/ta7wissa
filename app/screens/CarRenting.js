@@ -7,6 +7,9 @@ import SliderEntry from '../components/SliderEntry';
 import styles, { colors } from '../styles/index.style';
 import { ENTRIES1, ENTRIES2 } from '../static/entries';
 import { scrollInterpolators, animatedStyles } from '../utils/animations';
+import HomeScreen from "../components/HomeScreen";
+import CarCard from "../components/CarCard";
+import ListView from "../components/ListView/ListView";
 
 const IS_ANDROID = Platform.OS === 'android';
 const SLIDER_1_FIRST_ITEM = 1;
@@ -172,9 +175,8 @@ export default class example extends Component {
                         directionalLockEnabled={true}
                     >
                         { example1 }
-                        { example4 }
-                        { example6 }
                     </ScrollView>
+                    <HomeScreen/>
                 </View>
             </SafeAreaView>
         );

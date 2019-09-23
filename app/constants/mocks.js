@@ -52,18 +52,18 @@ const products = [
 
 const explore = [
   // images
-  require('../assets/images/explore_1.png'),
-  require('../assets/images/explore_2.png'),
-  require('../assets/images/explore_3.png'),
-  require('../assets/images/explore_4.png'),
-  require('../assets/images/explore_5.png'),
-  require('../assets/images/explore_6.png'),
-    require('../assets/images/explore_1.png'),
-    require('../assets/images/explore_2.png'),
-    require('../assets/images/explore_3.png'),
-    require('../assets/images/explore_4.png'),
-    require('../assets/images/explore_5.png'),
-    require('../assets/images/explore_6.png'),
+  require('../assets/images/meca.jpeg'),
+  require('../assets/images/istanbul.jpeg'),
+  require('../assets/images/japan.jpeg'),
+  require('../assets/images/meca.jpeg'),
+    require('../assets/images/dubai.jpeg'),
+    require('../assets/images/istanbul.jpeg'),
+    require('../assets/images/japan.jpeg'),
+    require('../assets/images/meca.jpeg'),
+    require('../assets/images/dubai.jpeg'),
+    require('../assets/images/istanbul.jpeg'),
+    require('../assets/images/japan.jpeg'),
+    require('../assets/images/meca.jpeg'),
 ];
 
 const profile = {
