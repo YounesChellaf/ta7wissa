@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b303318-4542-4eed-a94e-fc8c2282ee19" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/assets/images/dubai.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/istanbul.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/japan.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/meca.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/HomeScreen.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/ListView/ListView.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/ListView/ListViewStyle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/MapView/MapViewStyle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/MapView/MapViewTab.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/styles/CarCard.style.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/constants/mocks.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/constants/mocks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/screens/CarRenting.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/CarRenting.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/entries.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/entries.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -34,8 +19,8 @@
       <file leaf-file-name="SliderEntry.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/components/SliderEntry.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="13" column="6" lean-forward="true" selection-end-line="72" />
+            <state relative-caret-position="207">
+              <caret line="13" column="6" selection-end-line="72" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -46,11 +31,10 @@
       <file leaf-file-name="CarCard.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/components/CarCard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
+            <state relative-caret-position="1081">
               <caret line="51" column="38" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
-                <element signature="e#508#1174#0" />
               </folding>
             </state>
           </provider>
@@ -59,7 +43,7 @@
       <file leaf-file-name="ButtonGroup.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node_modules/react-native-elements/src/buttons/ButtonGroup.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
+            <state relative-caret-position="3519">
               <caret line="167" column="2" selection-start-line="167" selection-start-column="2" selection-end-line="167" selection-end-column="2" />
             </state>
           </provider>
@@ -68,7 +52,7 @@
       <file leaf-file-name="ListViewStyle.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/components/ListView/ListViewStyle.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
+            <state relative-caret-position="1541">
               <caret line="67" column="8" selection-start-line="67" selection-start-column="8" selection-end-line="67" selection-end-column="8" />
             </state>
           </provider>
@@ -77,8 +61,8 @@
       <file leaf-file-name="HomeScreen.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/components/HomeScreen.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74">
-              <caret line="107" column="28" lean-forward="true" selection-start-line="107" selection-start-column="28" selection-end-line="107" selection-end-column="28" />
+            <state relative-caret-position="2139">
+              <caret line="107" column="28" selection-start-line="107" selection-start-column="28" selection-end-line="107" selection-end-column="28" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -89,8 +73,8 @@
       <file leaf-file-name="ListView.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/components/ListView/ListView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="467" column="5" lean-forward="true" selection-start-line="467" selection-start-column="5" selection-end-line="467" selection-end-column="5" />
+            <state relative-caret-position="10258">
+              <caret line="467" column="5" selection-start-line="467" selection-start-column="5" selection-end-line="467" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -98,7 +82,7 @@
       <file leaf-file-name="SliderEntry.style.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/styles/SliderEntry.style.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
+            <state relative-caret-position="253">
               <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
               <folding>
                 <element signature="e#0#64#0" expanded="true" />
@@ -110,8 +94,8 @@
       <file leaf-file-name="CarCard.style.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/styles/CarCard.style.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-59">
-              <caret line="20" column="29" lean-forward="true" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+            <state relative-caret-position="437">
+              <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
               <folding>
                 <element signature="e#0#64#0" expanded="true" />
               </folding>
@@ -122,8 +106,8 @@
       <file leaf-file-name="CarRenting.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/screens/CarRenting.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="181" column="10" lean-forward="true" selection-start-line="181" selection-start-column="10" selection-end-line="181" selection-end-column="10" />
+            <state relative-caret-position="307">
+              <caret line="182" column="5" lean-forward="true" selection-start-line="182" selection-start-column="5" selection-end-line="182" selection-end-column="5" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -339,11 +323,13 @@
       <workItem from="1568386400089" duration="160000" />
       <workItem from="1568403860888" duration="145000" />
       <workItem from="1569144423403" duration="7411000" />
+      <workItem from="1569582251736" duration="11000" />
+      <workItem from="1569919594468" duration="22000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97907000" />
+    <option name="totallyTimeSpent" value="97940000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -402,6 +388,23 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/static/entries.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/screens/CarRenting.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3910">
+          <caret line="181" column="10" lean-forward="true" selection-start-line="181" selection-start-column="10" selection-end-line="181" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/components/Block.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -523,9 +526,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1886">
           <caret line="82" column="64" selection-start-line="82" selection-start-column="64" selection-end-line="82" selection-end-column="64" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -547,9 +547,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1932">
           <caret line="87" column="44" selection-start-line="87" selection-start-column="44" selection-end-line="87" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -585,9 +582,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
           <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -602,9 +596,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
           <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -612,9 +603,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
           <caret line="44" column="27" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -667,12 +655,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/MapView/MapViewStyle.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/images/explore_1.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/constants/mocks.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1219">
@@ -684,9 +666,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
           <caret line="76" column="2" selection-start-line="76" selection-start-column="2" selection-end-line="76" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -694,9 +673,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1478">
           <caret line="70" column="29" lean-forward="true" selection-start-line="70" selection-start-column="29" selection-end-line="70" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -709,8 +685,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/components/SliderEntry.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="6" lean-forward="true" selection-end-line="72" />
+        <state relative-caret-position="207">
+          <caret line="13" column="6" selection-end-line="72" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -719,7 +695,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/styles/SliderEntry.style.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
+        <state relative-caret-position="253">
           <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
           <folding>
             <element signature="e#0#64#0" expanded="true" />
@@ -729,33 +705,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/components/ListView/ListViewStyle.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
+        <state relative-caret-position="1541">
           <caret line="67" column="8" selection-start-line="67" selection-start-column="8" selection-end-line="67" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/react-native-elements/src/buttons/ButtonGroup.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
+        <state relative-caret-position="3519">
           <caret line="167" column="2" selection-start-line="167" selection-start-column="2" selection-end-line="167" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/components/CarCard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
+        <state relative-caret-position="1081">
           <caret line="51" column="38" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
-            <element signature="e#508#1174#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/styles/CarCard.style.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-59">
-          <caret line="20" column="29" lean-forward="true" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+        <state relative-caret-position="437">
+          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
           <folding>
             <element signature="e#0#64#0" expanded="true" />
           </folding>
@@ -764,8 +739,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/components/HomeScreen.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="107" column="28" lean-forward="true" selection-start-line="107" selection-start-column="28" selection-end-line="107" selection-end-column="28" />
+        <state relative-caret-position="2139">
+          <caret line="107" column="28" selection-start-line="107" selection-start-column="28" selection-end-line="107" selection-end-column="28" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -774,15 +749,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/components/ListView/ListView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="467" column="5" lean-forward="true" selection-start-line="467" selection-start-column="5" selection-end-line="467" selection-end-column="5" />
+        <state relative-caret-position="10258">
+          <caret line="467" column="5" selection-start-line="467" selection-start-column="5" selection-end-line="467" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/screens/CarRenting.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="181" column="10" lean-forward="true" selection-start-line="181" selection-start-column="10" selection-end-line="181" selection-end-column="10" />
+        <state relative-caret-position="307">
+          <caret line="182" column="5" lean-forward="true" selection-start-line="182" selection-start-column="5" selection-end-line="182" selection-end-column="5" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
