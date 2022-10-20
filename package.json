@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@shoutem/ui": "^0.24.1",
-    "expo": "^33.0.0",
+    "expo": "^46.0.16",
     "expo-linear-gradient": "~5.0.1",
     "prop-types": "latest",
     "react": "16.8.3",
